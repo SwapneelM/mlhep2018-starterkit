@@ -1,6 +1,25 @@
-## Solution for the MLHEP 2018 Challenge
+# Solution for the MLHEP 2018 Challenge
 
 - You can find details of the challenge on [CodaLab](https://competitions.codalab.org/competitions/19818)
+
+## Getting Started
+
+- If you just want to quickly get started with the contest, follow these steps:
+
+    - Download the dataset for the current ongoing phase (Phase 3, as of August 16 2018)
+    - Extract the hdf5 files containing training and testing data into a directory
+    - Provide the path to the directory within the `baseline_mpnn` Notebook
+    - Run all Cells
+
+## Tips and Tricks
+
+- The IO is visibly a bottleneck so if you want you can rewrite the file reading/writing using a library of your choice - I had attempted this with [h5py](http://www.h5py.org/) but I didn't have enough time to develop a replacement for the existing function in the `tools/base.py` file named `hdf5_to_numpy`.
+
+- The organisers were quick to follow-through on this and added a CSV-compatible version of the notebook based on the suggestions and code by another participant at the school: https://github.com/mmajewsk
+
+- I was too deep into training my MPNN to consider the switch although it would have saved me time. If you are just starting out, do take a look at my notebook but also check out the file reading/writing to CSV since it saves you about 20 minutes on an average (this is what I heard).
+
+- Finally, the simplest trick to work faster is to avoid re-running the cells that read in the training and testing examples (I have mentioned these as `Custom Blocks` within my notebook. Do take a look in case it helps you shave off quite a bit of time running the model.
 
 ## Background for the Competition
 
