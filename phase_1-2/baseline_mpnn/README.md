@@ -19,7 +19,7 @@
 
 - I was too deep into training my MPNN to consider the switch although it would have saved me time. If you are just starting out, do take a look at my notebook but also check out the file reading/writing to CSV since it saves you about 20 minutes on an average (this is what I heard).
 
-- Finally, the simplest trick to work faster is to avoid re-running the cells that read in the training and testing examples (I have mentioned these as `Custom Blocks` within my notebook. Do take a look in case it helps you shave off quite a bit of time running the model.
+- Finally, the simplest trick to work faster is to avoid re-running the cells that read in the training and testing examples (I have labeled these as `Custom Blocks` within my notebook). It helps you shave off quite a bit of time when you're playing around with the model esp. re-training it.
 
 ## Background for the Competition
 
